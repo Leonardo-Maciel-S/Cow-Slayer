@@ -1,7 +1,14 @@
 body {
-    background-color: rgb(62, 156, 75);
+    background-color: rgb(63, 65, 63);
     color: white;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+
 }
+
+/* COMANDOS */
 
 a {
     font-size: 2em;
@@ -11,6 +18,49 @@ a {
     color: white;
     text-decoration: none;
 }
+
+.texto-historia2 h1 {
+    text-align: center;
+}
+
+
+.historia h1 {
+    text-align: right;
+}
+
+.historia p {
+    text-align: right;
+    font-size: 1.5em;
+}
+
+.skill img {
+    height: 500px;
+    border-radius: 1em;
+    margin: 1em;
+}
+
+
+/* IMAGENS */
+
+.historia img {
+    margin: 2em 2em;
+    height: 500px;
+    position: relative;
+    border-radius: 1em;
+}
+
+.historia2 img {
+    margin: 2em 2em;
+    height: 500px;
+    border-radius: 1em;
+}
+
+.trailer img {
+    border-radius: 2em;
+}
+
+
+/* CLASSES */
 
 .logo {
     height: 720px;
@@ -35,52 +85,68 @@ a {
 .trailer{
     margin: 50px 20em;
     background-color: #212F3C;
-    display: grid;
-   
+    border-radius: 2em;
+    border: 2px solid rgb(126, 120, 120);
 }
 
 .historia{
-    display: inline-flex;
+    display: flex;
     background-color: #212F3C;
     margin: 20px 10em;
     border-radius: 1.5em;
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+
+.historia2 {
+    display: flex;
+    background-color: #212F3C;
+    margin: 20px 10em;
+    border-radius: 1.5em;
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
 }
 
 .texto-historia{
     margin: 20px;
-    display: inline;
     width: 500px;
 }
-.historia img{
-    margin: 2em 2em;
-    width: 700;
-    height: 500px;
-    position: relative;
+
+.texto-historia2 {
+    margin: 20px;
+    width: 500px;
+    font-size: 1.3em;
 }
 
-.historia h1{
-    text-align: right;
-}
 
-.historia p {
-    text-align: right;
-    font-size: 1.5em;
-}
 
 .skill {
-    display: flex;
-    border: 1px solid green;
     padding: 20px;
     text-align: center;
     background-color: gray;
     border-radius: 2em;
     background-color: #212F3C;
-    align-items: center;
+    margin: 50px;
+}
+
+.barra-skill {
+  
 }
 
 
 .link{
     text-align: center;
-    margin-left: 20em;
-    margin-top: 1em ;
+    border-radius: 1em;
+    margin-bottom: 2px ;
+}
+
+
+.preview {
+    display: block;
+    
+}
+
+
+.habildiade {
+    width: 50px;
+    height: 500px;
+    
 }
