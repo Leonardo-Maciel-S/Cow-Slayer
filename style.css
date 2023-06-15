@@ -25,6 +25,7 @@ a {
 
 
 .historia h1 {
+    margin: 40px;
     text-align: right;
 }
 
@@ -90,7 +91,9 @@ a {
 }
 
 .historia{
-    display: flex;
+    display: grid;
+    grid-template-columns: 1.5fr auto;
+    grid-template-rows: 1fr auto;
     background-color: #212F3C;
     margin: 20px 10em;
     border-radius: 1.5em;
@@ -107,7 +110,7 @@ a {
 
 .texto-historia{
     margin: 20px;
-    width: 500px;
+    
 }
 
 .texto-historia2 {
@@ -128,9 +131,8 @@ a {
 }
 
 .barra-skill {
-  
 }
-
+ 
 
 .link{
     text-align: center;
