@@ -1,0 +1,101 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: gray;
+
+}
+
+.logo {
+    justify-content: center;
+    flex-direction: row;
+}
+
+.cow {
+    width: 100%;
+    height: 900px;
+}
+
+.botao {
+    width: 30%;
+    height: 30%;
+    position: relative;
+    bottom: 120px;
+    align-items: center;
+    left: 34.5%;
+}
+
+.container-trailer {
+    align-self: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    border-radius: 1em;
+    width: 100%;
+
+    
+}
+
+.trailer {
+    padding: 15px;
+    margin: 50px;
+    background-color: rgb(37, 0, 247);
+    border-radius: 1.5em;
+}
+
+.trailer img {
+    border-radius: 1.5em;
+    width: 50%;
+
+}
+
+.historia {
+    color: white;
+    font-size: 1.5em;
+    align-self: center;
+    border-radius: 1.5em;
+    margin: 80px auto;
+    display: grid;
+    width: 80%;
+    background-color: rgb(73, 71, 95);
+    grid-template-columns: 1fr 1fr;
+    align-items:start;
+}
+
+.historia img {
+    width: 90%;
+    height: 90%;
+    border-radius: 1em;
+    margin: 20px;
+
+}
+
+.texto-historia h1 {
+    text-align: right;
+    margin: 20px;
+}
+
+.texto-historia{
+    flex-wrap: wrap;
+    margin: 20px;
+    margin-left: 0;
+    text-align: start;
+   
+}
+
+.video-teste{
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    width: 100%;
+    height: 100%;
+    z-index: -1000;
+    background-size: cover;
+}
+
