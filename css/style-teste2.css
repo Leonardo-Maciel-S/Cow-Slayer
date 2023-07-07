@@ -42,6 +42,7 @@ body {
 
 
 .botão {
+    width: 35%;
     position: absolute;
     bottom: -20;
 }
@@ -86,11 +87,13 @@ body {
 }
 
 .texto-fundo {
-    width: 60%;
+    border: 1px solid red;
+    width: 87%;
+    height: 100vh;
     position: absolute;
     z-index: 1;
     color: rgb(226, 208, 102);
-    font-size: 100px;
+    font-size: 3em;
     padding: 50px;
     display: flex;
     flex-direction: column;
@@ -103,7 +106,7 @@ body {
 .texto-fundo h1 {
     text-align: center;
     font-weight: bold;
-    margin: 100px;
+    margin: 50px;
 }
 
 .conteiner-build {
@@ -111,30 +114,30 @@ body {
     height: 100vh;
     display: flex;
     flex-direction: column;
+    justify-content: space-around;
     align-items: center;
     color: rgb(226, 208, 102);
     font-family: 'Times New Roman', Times, serif;
     font-weight: bold;
     background-color: rgb(17, 16, 16);
+    font-size: 5em;
+
 
 }
 
-.conteiner-build p{
-    margin: 50px;
-    font-size: 10em;
+.conteiner-build span{
+    margin-top: 1%;
     font-family: 'Times New Roman', Times, serif;
-}
-
-.preview {
-    width: 55vw;
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 
 .and-more {
     position: relative;
-    bottom: 130px;
+    bottom: 10%;
+    
+}
+
+.preview {
+    width: 55vw;
 }
 
 .img-principal {
@@ -145,7 +148,7 @@ body {
 
 .caixa-skill {
     position: relative;
-    bottom: 130px;
+    bottom: 12%;
     width: 30%;
     height: 10%;
     display: flex;
@@ -153,14 +156,23 @@ body {
     
 }
 
+
+
 .skill {
-    width: 20%;
     background-color: black;
+    transition: all .2s ease-in-out;
 }
 
+.skill:hover{
+    transform: scale(1.4);
+}
+
+
+
+
+
 .historia {
-    max-width: 100%;
-    width: 100%;
+    width: 100vw;
     height: 100vh;
     display: grid;
     grid-template-columns: 1fr 1fr;
