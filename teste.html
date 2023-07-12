@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>teste</title>
+    <link rel="stylesheet" href="css/cursoteste.css">
+</head>
+
+<body>
+    <div class="conteiner-build">
+        <span>MAKE YOUR BUILD</span>
+    
+        <div class="preview">
+            <img id="preveiW" class="img-principal" src="imagens/exemplo.png" alt="">
+        </div>
+    
+        <div class="caixa-skill">
+            <img id="martelo1"class="skill skill-martelo" src="skill/martelo.png" alt="" onclick="alterarConteudoImagem()"/>
+            <img id="raio1" class="skill skill-raio" src="skill/raio.png" alt="" onclick="alterarConteudoImagem()">
+            <img id="veneno1" class="skill skill-veneno" src="skill/veneno.png" alt="" onclick="alterarConteudoImagem()">
+            <img id="fogo1" class="skill skill-fogo" src="skill/fogo.png" alt="" onclick="alterarConteudoImagem()">
+        </div>
+        
+        <div class="and-more">AND MORE!</div>
+    </div>
+    
+    <script>
+        function alterarConteudoImagem() {
+            var imagem1 = document.getElementById("martelo1");
+            var imagem2 = document.getElementById("previeW");
+            
+
+            var caminhoImagem1 = imagem1.src;
+            var caminhoImagem2 = imagem2.src;
+
+            // Altera o conteúdo da imagem1 com a imagem2
+
+            // Altera o conteúdo da imagem2 com a imagem1
+            imagem2.src = src="imagens/fundo.png";
+        }
+    </script>
+</body>
+
+</html>
