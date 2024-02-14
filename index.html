@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jogo 2.0</title>
+
+    <link rel="stylesheet" href="./assets/styles/index.css">
+    <!-- fontes -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@700&family=Press+Start+2P&display=swap" rel="stylesheet">
+    <!-- fonte p -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    
+    
+</head>
+    
+<body>
+
+    <nav class="Menu">
+       <a class="text-logo" href="#">COW SLAYER</a>
+
+       <div class="menu-options">
+            <a href="#AREA-VIDEO" class="options">Trailer</a>
+            <a href="#SOBRE" class="options">Sobre</a>
+            <a href="#BUILD" class="options">Magias</a>
+            <a href="#UPGRADE" class="options">Upgrades</a>
+            <a href="#ITENS" class="options">Itens</a>
+            <a href="#RUNAS" class="options">Runas</a>
+            <a href="#FIM" class="options">Jogar</a>
+            <img class="menu-burger" src="./assets/imagens/img/menu-burguer.png" alt="" onclick="">
+       </div>
+    </nav>
+
+<!-- Capa ----------------- -->
+    <section id="capa" class="capa area-site">
+        <div class="capa-conteiner">
+            <img src="./assets/imagens/img/cowSlayer.svg" alt="" id="capa-logo">
+            <div class="text-capa">JOGUE AGORA</div>
+        </div>
+        <video class="video-fundo"  autoplay loop preload="auto">
+            <source src="../assets/img/Loopingtitle-1.mp4" alt="fundo-capa" type="video/mp4">
+        </video>
+    </section>
+
+
+<!-- video ----------------- -->
+
+    <section id="AREA-VIDEO" class="area-video area-site fundo-preto">
+        <div class="video">
+            <video src="./assets/imagens/giftexte.mp4" alt="trailer" autoplay loop></video>
+        </div>
+    </section>
+
+    
+<!-- Sobre ------------ -->
+
+    <section id="SOBRE" class="sobre area-site fundo-vermelho">
+        <div class="text-sobre">
+            <h1>Sobre</h1>
+            <P>Cow Slawer é mooito bom</P>
+        </div>
+    </section>
+
+
+<!-- build ------------ -->
+
+    <section id="BUILD" class="area-build area-site fundo-preto">
+        <div class="content-build">
+            <h2>FAÇA SUA BUILD!</h2>
+            <div class="video-build">
+                <video id="video-principal" src="./assets/imagens/giftexte.mp4" alt="tela-skill" autoplay loop></video>
+                <div class="caixa-skill">
+
+                   <div class="skill">
+                     <img class="skill-martelo" src="./assets/imagens/skill/martelo.png" alt="" onclick="MudarVideo('martelo', 'skill-martelo')" />
+                   </div>
+
+                    <div class="skill">
+                        <img class="skill-raio" src="./assets/imagens/skill/raio.png" alt="" onclick="MudarVideo('raio', 'skill-raio')" />
+                    </div>
+
+                    <div class="skill">
+                        <img class="skill-veneno" src="./assets/imagens/skill/veneno.png" alt="" onclick="MudarVideo('veneno', 'skill-veneno')" />
+                    </div>
+
+                    <div class="skill">
+                        <img class="skill-fogo" src="./assets/imagens/skill/fogo.png" alt="" onclick="MudarVideo('fogo', 'skill-fogo')" />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+<!-- upgrade ------------ -->
+    
+
+    <section id="UPGRADE" class="upgrade area-site fundo-vermelho"> 
+        <div class="area-upgrade">
+
+            <div class="text-upgrade">
+                <h2>Upgrades</h2>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deserunt nam .</p>
+            </div>
+            
+            <div class="upgrade-image">
+                <img  src="./assets/imagens/exemplo.png" alt="">
+            </div>
+          
+        </div>
+    </section>
+
+
+
+<!-- itens ------------ -->
+
+
+    <section id="ITENS" class="itens area-site fundo-preto"> 
+        <div class="area-itens">
+           <div class="conteiner-build">
+             <div class="itens-imagem">
+                    <div class="caixa-itens">
+                        <img src="./assets/imagens/itens/Broken Sword.png" alt="" class="itens-caixa ">
+                        <p>
+                            Dano: 50
+                            defesa: 50
+                            Passiva: joga muito
+                        </p>
+                    </div>
+
+                    <div class="caixa-itens">
+                        <img src="./assets/imagens/itens/CritSword.png" alt="" class="itens-caixa ">
+                        <p>Lorem ipsum, dolor sit amet consectetur</p>
+                    </div>
+
+                    <div class="caixa-itens itens-itens">
+                        <img src="./assets/imagens/itens/Plague Doctor Mask.png" alt="" class="itens-caixa ">
+                        <p>Lorem ipsum, dolor sit amet consectetur</p>
+                    </div>
+
+                    <div class="caixa-itens itens-itens">
+                        <img src="./assets/imagens/itens/Glass Armor.png" alt="" class="itens-caixa ">
+                        <p>Lorem ipsum, dolor sit amet consectetur</p>
+                    </div>
+
+                    <div class="caixa-itens itens-itens">
+                        <img src="./assets/imagens/itens/Green Cap.png" alt="" class="itens-caixa ">
+                        <p>Lorem ipsum, dolor sit amet consectetur</p>
+                    </div>
+
+                    <div class="caixa-itens itens-itens">
+                        <img src="./assets/imagens/itens/Iron Boots.png" alt="" class="itens-caixa ">
+                        <p>Lorem ipsum, dolor sit amet consectetur</p>
+                    </div>
+
+                    <div class="caixa-itens itens-itens">
+                        <img src="./assets/imagens/itens/Kite Shield.png" alt="" class="itens-caixa ">
+                        <p>Lorem ipsum, dolor sit amet consectetur</p>
+                    </div>
+                   
+                    <div class="caixa-itens itens-itens">
+                         <img src="./assets/imagens/itens/Lava Boots.png" alt="" class="itens-caixa ">
+                         <p>Lorem ipsum, dolor sit amet consectetur</p>
+                    </div>
+
+                    <div class="caixa-itens itens-itens">
+                        <img src="./assets/imagens/itens/Mistery Armor.png" alt="" class="itens-caixa ">
+                        <p>Lorem ipsum, dolor sit amet consectetur</p>
+                    </div>
+                    
+           </div>
+            </div>
+             <div class="itens-text">
+                    <h2>Itens</h2>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deserunt nam .</p>
+                </div>
+        </div>
+    </section>
+
+<!-- Runas ------------------->
+
+    <section id="RUNAS" class="runas area-site fundo-vermelho">
+        <div class="area-runas">
+
+            <div class="runas-text">
+                <h2>Runas <img src="./assets/imagens/runes/Rune-Ground.png" alt=""></h2>
+                <p>Obtenha runas que irão te ajudar no combate</p>
+            </div>
+
+            <div class="runas-imagem">
+                <div class="runas-image-animada">
+                    <img id="Runa-principal" src="./assets/imagens/runes/Fire-Rune.png" alt="">
+                    <img src="./assets/img/brightTest.png" alt="">
+                </div>
+
+                <h2 id="Title-runas" >Runa de fogo</h2>
+
+                <p id="ParagraphRune" >Aumenta dano elemental de fogo em x%</p>
+
+                <div class="conteiner-runas">
+                    <img src="./assets/imagens/runes/Double-Cast-Rune.png" alt="" class="conteiner-runas-image" onclick="MudaRunas('double-cast')">
+
+                    <img src="./assets/imagens/runes/Explosion-Area-Rune.png" alt="" class="conteiner-runas-image" onclick="MudaRunas('explosion-area')">
+
+                    <img src="./assets/imagens/runes/Fire-Rune.png" alt="" class="conteiner-runas-image" onclick="MudaRunas('fire')">
+
+                    <img src="./assets/imagens/runes/Ice-Rune.png" alt="" class="conteiner-runas-image" onclick="MudaRunas('ice')">
+
+                    <img src="./assets/imagens/runes/Lightning-Rune.png" alt="" class="conteiner-runas-image" onclick="MudaRunas('Lightning')">
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+<!-- capa fim -->
+
+     <section id="FIM" class="capa area-site">
+        <div class="capa-conteiner">
+            <img src="./assets/imagens/img/cowSlayer.svg" alt="" id="capa-logo">
+            <div class="text-capa">JOGUE AGORA</div>
+        </div>
+        <video class="video-fundo" src="../assets/img/Loopingtitle-1.mp4" alt="fundo-calpa" autoplay loop></video>
+    </section>
+
+<!-- script ------------ -->
+
+
+    <script src="js/index.js" defer></script>
+
+    
+
+</body>
+
+</html>

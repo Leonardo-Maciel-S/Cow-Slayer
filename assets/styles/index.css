@@ -1,0 +1,650 @@
+html {
+    scroll-snap-type: y proximity;
+    
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 62.5%;
+    color: #e3d594;
+    scroll-behavior: smooth;
+
+;
+}
+
+h1, h2 {
+    font-family: 'Cinzel', serif;
+}
+
+p {
+    font-family: 'Press Start 2P', sans-serif;
+    color: #e6e6e6;
+
+}
+
+img {
+    image-rendering: pixelated;
+}
+
+
+
+
+/* Geral --------------- */
+
+.area-site {
+    overflow: hidden;
+    scroll-snap-align: center;   
+    max-width: 100vw;
+    min-height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.fundo-preto {
+    background-color: #212123;
+    overflow: hidden;
+}
+
+.fundo-vermelho {
+    background-color: #e15b56;
+}
+
+.capa img {
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+}
+
+/* Menu ------------------------- */
+
+.Menu {
+    padding: 1rem 4rem;
+    z-index: 1000;
+    position: fixed;
+    width: 100%;
+    height: 7rem;  
+    transition: all 1s ease-out;
+    display: flex;
+    justify-content: space-between;
+    backdrop-filter: blur(10px);
+    
+    
+}
+.text-logo {
+    font-size: clamp(3.5rem, 1rem + 2vw, 9rem);
+    text-decoration: none;
+    color: #e3d594;
+
+}
+
+.text-logo:hover, .options:hover {
+    transform: scale(1.2);
+}
+
+.menu-options {
+    font-size: 3rem;
+    display: flex;
+    justify-content: space-between;
+    gap: 5rem;
+    align-items: center;
+}
+
+.options {
+    font-size: 1.5rem;
+    display: block;
+    text-decoration: none;
+    color: #e6e6e6;
+    font-family: 'Press Start 2P', sans-serif;
+
+}
+
+.options:hover{
+    transform: scale(1.3);
+    color: purple;
+}
+
+.menu-burger {
+    height: 4rem;
+    filter: invert();
+    display: none;
+}
+
+/* Capa ------------------------- */
+
+
+.capa {
+    position: relative;
+    flex: column nowrap;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+
+}
+
+.video-fundo {
+    z-index: -100;
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    background-size: cover;
+    
+}
+
+.video-fundo img {
+    width: 100%;
+}
+   
+.capa-conteiner{
+    z-index: 3;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: 5rem;
+    padding-top: 12rem;
+}
+
+#capa-logo {
+    width: 40rem;
+    height: 40rem;
+    transition: all 300ms ease-in-out;
+}
+
+
+.text-capa {
+    text-align: center;
+    padding: 0 5rem;
+    z-index: 1;
+    color: white;
+    font-size: 6rem;
+    transition: all 300ms ease-in-out;
+    font-family: 'Cinzel', serif;
+    animation: pulsando 2s ease-in-out 1s infinite alternate forwards;
+    cursor: pointer;
+
+}
+
+@keyframes pulsando {
+    from{
+        scale: 1;
+        color: white;
+    }
+    to {
+        scale: 1.3;
+        color: #e3d594;
+    }
+}
+
+.text-capa:hover {
+    transform: scale(1.3);
+    color: #f8d95b;
+    animation: none;
+}
+
+#volta-topo {
+    color: red;
+    width: 30rem;
+    filter: invert();
+    position: absolute;
+    bottom: 0;
+    right: 50;
+}
+
+.volta-topo:hover {
+    transform: scale(1.2);
+}
+
+/* Video ---------------- */
+
+.area-video {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.video video {
+    width: 90rem;
+    border-radius: 2rem;
+}
+
+
+/* Sobre -------------- */
+
+.sobre {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.text-sobre {
+    min-width: 50%;
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: clamp(1.7rem, 2.5vw, 15rem);
+}
+
+.text-sobre h1{
+    color: #f8d95b;
+    font-size: clamp(1.7rem, 4vw, 15rem);
+}
+
+.text-sobre p {
+    color: white;
+    font-weight: bold;
+}
+
+
+/* Build ------------- */
+
+.area-build {
+    background-color: rgb(27, 27, 27);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    
+
+}
+
+.area-build h2 {
+    color: #f8d95b;
+    font-size: clamp(1.7rem, 5vw, 15rem);
+    margin: 2rem 0;
+    flex-grow: 3;
+    flex-shrink: 1;
+}
+
+.content-build {
+    display: flex;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 4rem;
+}
+
+.video-build {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.video-build video {
+    max-width: 1000px;
+    width: 100%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-grow: 1;
+    flex-shrink: 1;
+    object-fit: cover;
+    
+}
+
+
+
+.skill {
+    transition: all 300ms ease-in-out;
+    max-width: 11rem;
+    flex-grow: 1;
+    flex-shrink: 1;
+   
+}
+
+.skill img {
+   width: 100%;
+
+}
+
+
+.skill:hover {
+    transform: scale(1.3);
+}
+
+.caixa-skill {
+    width: 100%;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-grow: 1;
+    flex-shrink: 1;
+    gap: 3rem;
+    bottom: -5rem;
+  
+}
+
+
+/* Itens -------------- */
+
+.area-itens {
+    overflow: hidden;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    gap: 10rem;
+    padding: 20rem 10rem 10rem 10rem;
+    text-align: right;
+
+}
+
+
+
+.area-itens h2 {
+    color: #f8d95b;
+    font-size:clamp(3rem, 8vw, 10rem);
+    margin-bottom: 7rem;
+}
+
+.area-itens p {
+    color: white;
+    font-size: 3rem;
+}
+
+.itens-imagem {
+    justify-content: center; 
+    display: grid;
+    grid-template-columns: repeat(3, .1fr);
+    grid-template-rows: repeat(3, .1fr);
+    gap: 6rem;
+    padding: 7rem;
+    position: relative;
+
+}
+
+.caixa-itens {
+    flex: 1 1 200px;
+    position: relative;
+    transition: all 300s linear;
+}
+
+
+.itens-caixa:hover {
+    transform: scale(1.2);
+}
+
+
+.caixa-itens:nth-child(2){
+   position: relative;
+   top: -70px;
+}
+
+.caixa-itens:nth-child(4){
+   position: relative;
+   left: -70px;
+}
+
+.caixa-itens:nth-child(6){
+   position: relative;
+   right: -70px;
+}
+
+.caixa-itens:nth-child(8){
+   position: relative;
+   bottom: -70px;
+}
+
+
+.caixa-itens:hover {
+    transform: scale(1.3);
+}
+
+.caixa-itens img {
+    object-fit: cover;
+    height: 10rem;
+    z-index: -1;
+}
+
+.caixa-itens p {
+    display: none;
+    padding: 1rem;
+    border-radius: 10px;
+    font-size: 1.5rem;
+    text-align: center;
+    position: absolute;
+    width: 20rem;
+    line-height: 3rem;
+    left: -50px;
+
+}
+
+
+
+.caixa-itens:hover p {
+    display: flex;
+    background-color: red;
+    font-size: 1.5rem;
+    z-index: 100;
+
+    
+}
+
+
+.itens-imagem:has(.caixa-itens img:hover) > .caixa-itens img:not(:hover) {
+    filter: grayscale(1);
+   
+   
+}
+
+/* Upgrades-------------------- */
+
+.upgrade {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 0 10rem;
+}
+
+.area-upgrade {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10rem;
+    text-align: left;
+
+}
+
+.text-upgrade {
+    flex: 1 1 400px;
+    min-width: 30rem;
+}
+
+.area-upgrade h2 {
+    color: #f8d95b;
+    font-size: clamp(1.7rem, 4vw, 15rem);
+    margin-bottom: 7rem;
+}
+
+.area-upgrade p {
+    color: white;
+    font-size: clamp(1rem, 2vw, 3rem);
+}
+
+.upgrade-image {
+    min-width: 50%;
+    display: flex;
+    flex: 1 1;
+
+}
+
+.upgrade-image img {
+    width: 100%;
+    object-fit: fill;
+}
+
+
+/* Runas -------------- */
+
+.area-runas {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10rem;
+    padding: 25rem 15rem;
+    text-align: left;
+    font-size: 4rem;
+}
+
+.runas-text {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: start;
+    justify-content: center;
+    text-align: left;
+    font-size: 4rem;
+     
+}
+
+.runas-text h2{
+    font-size: 6rem;
+
+}
+
+.runas-text img {
+   width: 6rem;
+     
+}
+
+.runas-imagem {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+    
+}
+
+
+.runas-imagem h2{
+    margin-top: 4rem;
+    font-size: 6rem;
+    text-align: center;
+
+}
+
+#ParagraphRune {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    min-height: 5rem;
+}
+
+
+
+
+
+
+.runas-image-animada {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    text-align: center;
+
+}
+
+
+.runas-image-animada img:nth-child(1) {
+    width: 10rem;
+    z-index: 1;
+    object-fit: contain;
+}
+
+.runas-image-animada img:nth-child(2) {
+    object-fit: cover;
+    width: 30rem;
+    position: absolute;
+    animation: giraEstrela infinite 3s linear;
+}
+
+@keyframes giraEstrela {
+    from {
+        transform: rotate(0deg);
+    }
+
+    50% {
+        transform: rotate(180deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+
+.conteiner-runas {
+    display: flex;
+    flex-flow: row wrap;
+    gap: 3rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.conteiner-runas img {
+    min-height: 8rem;
+    object-fit: cover;
+    animation: all 300ms ease;
+}
+
+.conteiner-runas img:hover {
+    transform: scale(1.4);
+}
+
+
+/* Media query  ------------------*/
+
+@media (max-width: 1500px) {
+
+    .area-site {
+        height: auto;
+    }
+
+    .options {
+       display: none;
+    }
+
+    .menu-burger {
+        display: block;
+    }
+
+
+    .area-itens {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr .5fr;
+        padding: 10rem 10rem;
+
+    }
+
+
+    .area-runas {
+        width: 100%;
+        border: 1px solid blue;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 2fr;
+        padding: 10rem 5rem;
+        
+    }
+
+    .runas-text {
+        align-items: center;
+        text-align: center;
+    }
+
+}
