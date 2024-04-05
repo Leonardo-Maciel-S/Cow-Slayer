@@ -24,11 +24,11 @@ function MudaRunas(runa) {
     const ParagraphRune = document.getElementById("ParagraphRune")
 
     const RunasCaminhos = {
-        'double-cast': '../assets/imagens/runes/Double-Cast-Rune.png',
-        'explosion-area': '../assets/imagens/runes/Explosion-Area-Rune.png',
-        'fire': '../assets/imagens/runes/Fire-Rune.png',
-        'ice': '../assets/imagens/runes/Ice-Rune.png',
-        'Lightning':'../assets/imagens/runes/Lightning-Rune.png'
+        'double-cast': './assets/imagens/runes/Double-Cast-Rune.png',
+        'explosion-area': './assets/imagens/runes/Explosion-Area-Rune.png',
+        'fire': './assets/imagens/runes/Fire-Rune.png',
+        'ice': './assets/imagens/runes/Ice-Rune.png',
+        'Lightning':'./assets/imagens/runes/Lightning-Rune.png'
     }
 
     const Titles = {
