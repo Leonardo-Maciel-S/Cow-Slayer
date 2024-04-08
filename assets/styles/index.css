@@ -638,7 +638,6 @@ img {
 
     .area-runas {
         width: 100%;
-        border: 1px solid blue;
         grid-template-columns: 1fr;
         grid-template-rows: 1fr 2fr;
         padding: 10rem 5rem;
