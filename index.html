@@ -3,11 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cow Slayer</title>
+    <title>Jogo 2.0</title>
 
-    
-
-    
+    <link rel="stylesheet" href="./assets/styles/index.css">
     <!-- fontes -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -16,10 +14,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
-
-    <!-- CSS -->
-    <link rel="stylesheet" href="./assets/styles/index.css">
-
+    
     
 </head>
     
@@ -43,10 +38,12 @@
 <!-- Capa ----------------- -->
     <section id="capa" class="capa area-site">
         <div class="capa-conteiner">
-            <img id="capa-logo" src="./assets/imagens/img/cowSlayer.svg" alt="" >
+            <img src="./assets/imagens/img/cowSlayer.svg" alt="" id="capa-logo">
             <div class="text-capa">JOGUE AGORA</div>
         </div>
-        <video class="video-fundo" src="./assets/img/Loopingtitle-1.mp4" alt="fundo-capa" autoplay loop preload="auto" muted></video>
+        <video class="video-fundo"  autoplay loop preload="auto" muted>
+            <source src="../assets/img/Loopingtitle-1.mp4" alt="fundo-capa" type="video/mp4">
+        </video>
     </section>
 
 
@@ -64,7 +61,7 @@
     <section id="SOBRE" class="sobre area-site fundo-vermelho">
         <div class="text-sobre">
             <h1>Sobre</h1>
-            <P>Cow Slawer é mooito bom Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eaque, error maxime eum et fugit ad. Id vitae, molestiae harum eius corporis illo, quisquam quibusdam at ullam odio, quasi eveniet iure.</P>
+            <P>Cow Slawer é mooito bom</P>
         </div>
     </section>
 
@@ -75,23 +72,27 @@
         <div class="content-build">
             <h2>FAÇA SUA BUILD!</h2>
             <div class="video-build">
-                <video id="video-principal" src="./assets/imagens/giftexte.mp4" alt="tela-skill" autoplay loop muted></video>
+                <video id="video-principal" src="/assets/imagens/giftexte.mp4" alt="tela-skill" autoplay loop muted></video>
                 <div class="caixa-skill">
 
-                   <div class="skill">
-                     <img class="skill-martelo" src="./assets/imagens/skill/martelo.png" alt="" onclick="MudarVideo('martelo', 'skill-martelo')" />
+                   <div class="skill ">
+                        <img class="skill-img skill-fireAura" src="./assets/imagens/skill/fireAura.png" alt="" onclick="MudarVideo('fireAura', 'skill-fireAura')" />
+                        <p class="p-skill">fireAura</p>
                    </div>
 
-                    <div class="skill">
-                        <img class="skill-raio" src="./assets/imagens/skill/raio.png" alt="" onclick="MudarVideo('raio', 'skill-raio')" />
+                    <div class="skill">                       
+                        <img class="skill-img skill-holyCross" src="./assets/imagens/skill/holyCross.png" alt="" onclick="MudarVideo('holyCross', 'skill-holyCross')" />
+                        <p class="p-skill">holyCross</p>
                     </div>
 
-                    <div class="skill">
-                        <img class="skill-veneno" src="./assets/imagens/skill/veneno.png" alt="" onclick="MudarVideo('veneno', 'skill-veneno')" />
+                    <div class="skill">                   
+                        <img class="skill-img skill-lightning" src="./assets/imagens/skill/lightning.png" alt="" onclick="MudarVideo('lightning', 'skill-lightning')" />
+                        <p class="p-skill">lightning</p>
                     </div>
 
-                    <div class="skill">
-                        <img class="skill-fogo" src="./assets/imagens/skill/fogo.png" alt="" onclick="MudarVideo('fogo', 'skill-fogo')" />
+                    <div class="skill">                      
+                        <img class="skill-img skill-poisonPotion" src="./assets/imagens/skill/poisonPotion.png" alt="" onclick="MudarVideo('poisonPotion', 'skill-poisonPotion')" />
+                        <p class="p-skill">poisonPotion</p>
                     </div>
                 </div>
             </div>
@@ -123,60 +124,63 @@
 
     <section id="ITENS" class="itens area-site fundo-preto"> 
         <div class="area-itens">
-            <div class="conteiner-build">
-                <div class="itens-imagem">
-                        <div class="caixa-itens">
-                            <img src="./assets/imagens/itens/Broken Sword.png" alt="" class="itens-caixa ">
-                            <p class="descricao-itens">Lorem ipsum, dolor sit amet consectetur</p>
-                        </div>
+           <div class="conteiner-build">
+             <div class="itens-imagem">
+                    <div class="caixa-itens">
+                        <img src="./assets/imagens/itens/Broken Sword.png" alt="" class="itens-caixa ">
+                        <p>
+                            Dano: 50
+                            defesa: 50
+                            Passiva: joga muito
+                        </p>
+                    </div>
 
-                        <div class="caixa-itens">
-                            <img src="./assets/imagens/itens/CritSword.png" alt="" class="itens-caixa ">
-                            <p class="descricao-itens">Lorem ipsum, dolor sit amet consectetur</p>
-                        </div>
+                    <div class="caixa-itens">
+                        <img src="./assets/imagens/itens/CritSword.png" alt="" class="itens-caixa ">
+                        <p>Lorem ipsum, dolor sit amet consectetur</p>
+                    </div>
 
-                        <div class="caixa-itens itens-itens">
-                            <img src="./assets/imagens/itens/Plague Doctor Mask.png" alt="" class="itens-caixa ">
-                            <p class="descricao-itens">Lorem ipsum, dolor sit amet consectetur</p>
-                        </div>
+                    <div class="caixa-itens itens-itens">
+                        <img src="./assets/imagens/itens/Plague Doctor Mask.png" alt="" class="itens-caixa ">
+                        <p>Lorem ipsum, dolor sit amet consectetur</p>
+                    </div>
 
-                        <div class="caixa-itens itens-itens">
-                            <img src="./assets/imagens/itens/Glass Armor.png" alt="" class="itens-caixa ">
-                            <p class="descricao-itens">Lorem ipsum, dolor sit amet consectetur</p>
-                        </div>
+                    <div class="caixa-itens itens-itens">
+                        <img src="./assets/imagens/itens/Glass Armor.png" alt="" class="itens-caixa ">
+                        <p>Lorem ipsum, dolor sit amet consectetur</p>
+                    </div>
 
-                        <div class="caixa-itens itens-itens">
-                            <img src="./assets/imagens/itens/Green Cap.png" alt="" class="itens-caixa ">
-                            <p class="descricao-itens">Lorem ipsum, dolor sit amet consectetur</p>
-                        </div>
+                    <div class="caixa-itens itens-itens">
+                        <img src="./assets/imagens/itens/Green Cap.png" alt="" class="itens-caixa ">
+                        <p>Lorem ipsum, dolor sit amet consectetur</p>
+                    </div>
 
-                        <div class="caixa-itens itens-itens">
-                            <img src="./assets/imagens/itens/Iron Boots.png" alt="" class="itens-caixa ">
-                            <p class="descricao-itens">Lorem ipsum, dolor sit amet consectetur</p>
-                        </div>
+                    <div class="caixa-itens itens-itens">
+                        <img src="./assets/imagens/itens/Iron Boots.png" alt="" class="itens-caixa ">
+                        <p>Lorem ipsum, dolor sit amet consectetur</p>
+                    </div>
 
-                        <div class="caixa-itens itens-itens">
-                            <img src="./assets/imagens/itens/Kite Shield.png" alt="" class="itens-caixa ">
-                            <p class="descricao-itens">Lorem ipsum, dolor sit amet consectetur</p>
-                        </div>
+                    <div class="caixa-itens itens-itens">
+                        <img src="./assets/imagens/itens/Kite Shield.png" alt="" class="itens-caixa ">
+                        <p>Lorem ipsum, dolor sit amet consectetur</p>
+                    </div>
+                   
+                    <div class="caixa-itens itens-itens">
+                         <img src="./assets/imagens/itens/Lava Boots.png" alt="" class="itens-caixa ">
+                         <p>Lorem ipsum, dolor sit amet consectetur</p>
+                    </div>
+
+                    <div class="caixa-itens itens-itens">
+                        <img src="./assets/imagens/itens/Mistery Armor.png" alt="" class="itens-caixa ">
+                        <p>Lorem ipsum, dolor sit amet consectetur</p>
+                    </div>
                     
-                        <div class="caixa-itens itens-itens">
-                            <img src="./assets/imagens/itens/Lava Boots.png" alt="" class="itens-caixa ">
-                            <p class="descricao-itens">Lorem ipsum, dolor sit amet consectetur</p>
-                        </div>
-
-                        <div class="caixa-itens itens-itens">
-                            <img src="./assets/imagens/itens/Mistery Armor.png" alt="" class="itens-caixa">
-                            <p class="descricao-itens">Lorem ipsum, dolor sit amet consectetur</p>
-                        </div>
-                        
+           </div>
+            </div>
+             <div class="itens-text">
+                    <h2>Itens</h2>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deserunt nam .</p>
                 </div>
-            </div>
-
-            <div class="itens-text">
-                <h2>Itens</h2>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deserunt nam .</p>
-            </div>
         </div>
     </section>
 
@@ -223,7 +227,7 @@
             <img src="./assets/imagens/img/cowSlayer.svg" alt="" id="capa-logo">
             <div class="text-capa">JOGUE AGORA</div>
         </div>
-        <video class="video-fundo" src="./assets/img/Loopingtitle-1.mp4" alt="fundo-calpa" autoplay loop muted></video>
+        <video class="video-fundo" src="../assets/img/Loopingtitle-1.mp4" alt="fundo-calpa" autoplay loop muted></video>
     </section>
 
 <!-- script ------------ -->
