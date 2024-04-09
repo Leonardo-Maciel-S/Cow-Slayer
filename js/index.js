@@ -4,10 +4,10 @@ function MudarVideo(skill, classe) {
     const skillOutras = document.getElementsByClassName("skill-img")
 
     const caminhos = {
-        "fireAura":"/assets/videos/fireAura.mp4",
-        "holyCross":"/assets/videos/holyCross.mp4",
-        "lightning":"/assets/videos/lightningStrike.mp4",
-        "poisonPotion":"/assets/videos/poisonPotion.mp4"
+        "fireAura":"./assets/imagens/fireAura.mp4",
+        "holyCross":"./assets/imagens/holyCross.mp4",
+        "lightning":"./assets/imagens/lightningStrike.mp4",
+        "poisonPotion":"./assets/imagens/poisonPotion.mp4"
     }
 
 
